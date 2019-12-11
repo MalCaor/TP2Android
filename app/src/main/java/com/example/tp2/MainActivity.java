@@ -51,4 +51,16 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.w("P2","onDestroy");
     }
+    // # ON SAVE INSTANCE STATE #
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        Log.w("P2","onSaveInstanceState");
+    }
+    // # ON RESTORE INSTANCE STATE #
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.w("P2","onRestoreInstanceState");
+    }
 }
